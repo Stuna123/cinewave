@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+🎬 CineWave – Movie Discovery App
+---
+CineWave is a React-based movie discovery application that allows users to explore, search, and view detailed information about movies using The Movie Database (TMDB) API.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project started from a tutorial base and was extended with custom features, performance optimizations, and UX improvements.
 
-## Available Scripts
+*******************
+🚀 Live Features
+---
+🎥 _Browse movies_ :
 
-In the project directory, you can run:
+• Now Playing
+• Popular
+• Top Rated
+• Upcoming
 
-### `npm start`
+🔍 _Real-time Movie Search_ :
+• Automatic search using onChange
+• Optimized with debounce to limit API requests
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+⏳ _Loading state & empty search handling_ :
+• User feedback during API requests
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🌙 _Dark / Light mode_ :
+• Persisted using localStorage
 
-### `npm test`
+🎬 _Movie detail pages (dynamic routing)_ :
+• Synopsis
+• Genres
+• Average rating & vote count
+• Runtime, budget, revenue
+• IMDb link
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+📱 **Fully responsive UI**
+❌ **Custom 404 Page**
+⬆️ **Scroll to top on route change**
 
-### `npm run build`
+**************
+🛠 Tech Stack
+---
+• React
+• React Router
+• Tailwind CSS
+• TMDB API
+• JavaScript (ES6+)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+*****************
+🧩 Custom Hooks
+---
+• _useFetch_ – reusable data fetching logic
+• _useDebounce_ – optimized API calls during search
+• _useTitle_ – dynamic document titles
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**********************************
+⚡ Performance & UX Improvements
+---
+• Debounced search to reduce unnecessary API calls
+• Prevents empty search requests
+• User-friendly messages for : 
+    - Empty input
+    - No results found
+    - Loading state
+• Optimized navigation without page reloads
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+************************
+📂 Structure of project
+---
+**src/**
+├── **components/**
+│   ├── Header.js
+│   ├── Card.js
+│
+├── **pages/**
+│   ├── Home.js
+│   ├── Search.js
+│   ├── MovieDetail.js
+│   ├── PageNotFound.js
+│
+├── **hooks/**
+│   ├── useFetch.js
+│   ├── useDebounce.js
+│   ├── useTitle.js
+│   
+├──  **assets/**
+├── App.js
+└── index.js
 
-### `npm run eject`
+************************
+🔑 Environment Variables
+---
+**REACT_APP_API_KEY=your_tmdb_api_key_here**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+************************
+Installation & Setup
+---
+**git clone https://github.com/your-username/cinewave.git**
+**cd cinewave**
+**npm install**
+**npm start**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+************************
+💬 Feedback
+---
+Feedback and suggestions are welcome!
+If you like the project, feel free to ⭐ the repository.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+************************
+Acknowledgements
+---
+This project was inspired by a tutorial from **Shubham Sarda.**
+I extended it with additional features, refactoring, and improvements.
