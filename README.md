@@ -71,25 +71,7 @@ Optimized navigation without page reloads
 
 ## 📂 Structure of project
 
-**src/**
-├── **components/**
-│   ├── Header.js
-│   ├── Card.js
-│
-├── **pages/**
-│   ├── Home.js
-│   ├── Search.js
-│   ├── MovieDetail.js
-│   ├── PageNotFound.js
-│
-├── **hooks/**
-│   ├── useFetch.js
-│   ├── useDebounce.js
-│   ├── useTitle.js
-│   
-├──  **assets/**
-├── App.js
-└── index.js
+![alt text](image.png)
 
 ------
 
@@ -100,10 +82,10 @@ Optimized navigation without page reloads
 
 ## Installation & Setup
 
-git clone https://github.com/your-username/cinewave.git
-cd cinewave
-npm install
-npm start
+-   git clone https://github.com/your-username/cinewave.git
+-   cd cinewave
+-   npm install
+-   npm start
 
 ------
 ## 💬 Feedback
